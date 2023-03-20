@@ -1,0 +1,15 @@
+{
+  "plugins": ["@typescript-eslint","prettier"],
+  "extends": ["next/core-web-vitals", "eslint:recommended", "next", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["**/migrations/*.js","**/seeders/*.js"],
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/consistent-type-assertions": ["error", { "assertionStyle": "as" }],
+    "@typescript-eslint/no-var-requires": "off",
+    "react/style-prop-object": [
+      "error",
+      { "allow": ["FormattedNumber", "FormattedDateParts", "FormattedRelativeTime"] }
+    ]
+  }
+}

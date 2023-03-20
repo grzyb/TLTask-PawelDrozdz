@@ -1,0 +1,58 @@
+{
+  "name": "tl-task",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check-types": "tsc --noemit",
+    "lint": "next lint && npm run check-types",
+    "lint:fix": "next lint --fix",
+    "db:init": "sequelize-cli db:migrate && sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "@emotion/cache": "11.10.5",
+    "@emotion/react": "11.10.6",
+    "@emotion/server": "11.10.0",
+    "@emotion/styled": "11.10.6",
+    "@fontsource/roboto": "4.5.8",
+    "@mui/icons-material": "5.11.9",
+    "@mui/material": "5.11.10",
+    "@next/font": "13.1.6",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "eslint": "7.32.0",
+    "eslint-config-next": "13.1.6",
+    "express-graphql": "0.12.0",
+    "graphql": "16.6.0",
+    "graphql-relay": "0.10.0",
+    "graphql-sequelize": "9.5.1",
+    "jsonwebtoken": "9.0.0",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sequelize": "6.28.0",
+    "sqlite3": "5.1.4",
+    "typescript": "4.9.5"
+  },
+  "engines": {
+    "node": "16.14.2",
+    "npm": "8.5.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "13.4.0",
+    "@types/jsonwebtoken": "9.0.1",
+    "@typescript-eslint/eslint-plugin": "5.50.0",
+    "@typescript-eslint/parser": "5.50.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "jest": "29.4.1",
+    "jest-environment-jsdom": "29.4.1",
+    "prettier": "2.8.3",
+    "sass": "1.58.0",
+    "sequelize-cli": "6.3.0"
+  }
+}
